@@ -1,3 +1,19 @@
+---
+title: LTE Roaming Signaling Troubleshooting Lab
+emoji: 📡
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 8501
+pinned: false
+tags:
+  - streamlit
+  - telecom
+  - roaming
+  - wireshark
+---
+
+
 # LTE Roaming Signaling and Wireshark Troubleshooting Lab
 
 This is a self-directed telecom integration lab for analyzing simulated LTE roaming signaling events.
