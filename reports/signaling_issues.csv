@@ -1,0 +1,19 @@
+session_id,issue_type,severity,interface,protocol,description,recommendation
+S002,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CREATE_SESSION_RESPONSE is missing.,Check the signaling trace and identify where the procedure stopped.
+S002,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CHARGING_TRIGGER is missing.,Check the signaling trace and identify where the procedure stopped.
+S002,FAILED_SIGNALING_EVENT,HIGH,S6a,DIAMETER,AUTH_RESPONSE failed with result TIMEOUT.,Inspect packet trace around the failed event and verify peer configuration.
+S002,FAILED_SIGNALING_EVENT,HIGH,S11,GTPv2,CREATE_SESSION_REQUEST failed with result FAILED.,Inspect packet trace around the failed event and verify peer configuration.
+S002,HIGH_SIGNALING_LATENCY,MEDIUM,S6a,DIAMETER,AUTH_RESPONSE latency is 3500 ms.,"Check IP connectivity, routing path, roaming hub/IPX latency, and peer response time."
+S003,APN_MISMATCH,HIGH,S11/S8,GTPv2,"Session used APN wrong.apn, expected iot.sateliot.","Verify APN configuration between operator, roaming partner, and packet core."
+S003,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CREATE_SESSION_RESPONSE is missing.,Check the signaling trace and identify where the procedure stopped.
+S003,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CHARGING_TRIGGER is missing.,Check the signaling trace and identify where the procedure stopped.
+S003,FAILED_SIGNALING_EVENT,HIGH,S11,GTPv2,CREATE_SESSION_REQUEST failed with result FAILED.,Inspect packet trace around the failed event and verify peer configuration.
+S004,ROAMING_PARTNER_NOT_ALLOWED,CRITICAL,S6a,DIAMETER,Visited network UNKNOWN_MNO is not configured as an allowed roaming partner.,"Check roaming agreement, partner configuration, and Diameter routing rules."
+S004,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event AUTH_RESPONSE is missing.,Check the signaling trace and identify where the procedure stopped.
+S004,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CREATE_SESSION_REQUEST is missing.,Check the signaling trace and identify where the procedure stopped.
+S004,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CREATE_SESSION_RESPONSE is missing.,Check the signaling trace and identify where the procedure stopped.
+S004,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CHARGING_TRIGGER is missing.,Check the signaling trace and identify where the procedure stopped.
+S004,FAILED_SIGNALING_EVENT,HIGH,S6a,DIAMETER,AUTH_REQUEST failed with result FAILED.,Inspect packet trace around the failed event and verify peer configuration.
+S005,MISSING_SIGNALING_EVENT,HIGH,Multiple,Multiple,Required event CHARGING_TRIGGER is missing.,Check the signaling trace and identify where the procedure stopped.
+S005,HIGH_SIGNALING_LATENCY,MEDIUM,S6a,DIAMETER,AUTH_REQUEST latency is 2500 ms.,"Check IP connectivity, routing path, roaming hub/IPX latency, and peer response time."
+S005,HIGH_SIGNALING_LATENCY,MEDIUM,S6a,DIAMETER,AUTH_RESPONSE latency is 2600 ms.,"Check IP connectivity, routing path, roaming hub/IPX latency, and peer response time."
